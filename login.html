@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and register</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <!-- Toggle Tabs -->
+        <div class="tab-header">
+            <button id="tab-register-btn" class="tab-btn active" onclick="switchForm('register')">ចុះឈ្មោះ
+                (Register)</button>
+            <button id="tab-login-btn" class="tab-btn" onclick="switchForm('login')">ចូលប្រើប្រាស់ (Login)</button>
+        </div>
+
+        <div class="register-card">
+            <h2>បង្កើតគណនីថ្មី (Create Account)</h2>
+
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <!-- Full Name -->
+                <div class="input-group">
+                    <label for="regName">ឈ្មោះពេញ (Full Name)</label>
+                    <input type="text" id="regName" placeholder="Sok Chea" required />
+                </div>
+
+                <!-- Email Address -->
+                <div class="input-group">
+                    <label for="regEmail">អ៊ីមែល (Email)</label>
+                    <input type="email" id="regEmail" placeholder="name@example.com" required />
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label for="regPassword">ពាក្យសម្ងាត់ (Password)</label>
+                    <input type="password" id="regPassword" placeholder="••••••••" minlength="6" required />
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+                    <label for="regConfirmPassword">បញ្ជាក់ពាក្យសម្ងាត់ (Confirm Password)</label>
+                    <input type="password" id="regConfirmPassword" placeholder="••••••••" minlength="6" required />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">ចុះឈ្មោះ (Register)</button>
+            </form>
+            <!-- 2. LOGIN FORM -->
+            <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+                <h2>ចូលប្រើប្រាស់ (Login)</h2>
+
+                <div class="input-group">
+                    <label for="login-email">អ៊ីមែល (Email Address)</label>
+                    <input type="email" id="login-email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">ពាក្យសម្ងាត់ (Password)</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="submit-btn login-btn">ចូលប្រើប្រាស់ (Log In)</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
