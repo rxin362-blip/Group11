@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/pheanin-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <section class="profile p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card-box">
+                        <div class="nav-label">ACCOUNT MENU</div>
+                        <nav class="nav-list">
+                            <a class="nav-link active" href="profile.html"><i class="bi bi-person-fill"></i> My
+                                    Profile</a>
+                            <a class="nav-link" href="orders.html"><i class="bi bi-cart-fill"></i> My
+                                    Orders</a>
+                            <a class="nav-link" href="notifications.html"><i
+                                    class="bi bi-bell-fill"></i> Notifications</a>
+                            <a class="nav-link" href="address.html"><i class="bi bi-globe-americas"></i> My Addresses</a>
+                            <a class="nav-link" href="settings.html"><i
+                                    class="bi bi-gear-fill"></i> Settings</a>
+                            <a class="nav-link" href="help-support.html"><i class="bi bi-question-circle"></i> Help & Support</a>
+                        </nav>
+                        <div class="bottom">
+                            <a class="nav-link" href="logout.html"><span class="nav-icon"><i class="bi bi-arrow-right"></i></span>Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="text">MenuMate / Account / My Profile</div>
+                    <h1>My Profile</h1>
+                    <p class="subtitle">Manage your personal information and account details.</p>
+
+                    <div class="card-box">
+                        <div class="profile-head">
+                            <img class="img mb-4 mx-3"
+                                src="https://i.pinimg.com/736x/60/f7/e6/60f7e6d2bbfc7328d25a53fb48ea53b9.jpg" alt="">
+                            <div>
+                                <h3 class="fw-bold">Chann Sophea</h3>
+                                <div class="text mx-1">Customer account</div>
+                            </div>
+                        </div>
+                        <h2 class="title">Personal Information</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input class="form-control" value="Chann Sophea">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input class="form-control" placeholder="+855 12 345 678">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Delivery Address</label>
+                                    <textarea class="form-control" rows="2" placeholder="Enter your address"></textarea>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                    <button class="btn btn-change" type="button">Save Changes</button>
+                                    <button class="btn btn-cancel" type="reset">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="footer-note">© 2026 MenuMate · Restaurant ordering made simple</div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
