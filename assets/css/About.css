@@ -1,8 +1,17 @@
+/* Palette (taken from navbar-and-footer.css)
+   --teal:       #123233  navbar / surface
+   --ink:        #080c14  darkest background
+   --gold:       #fbbf24  accent / headings
+   --gold-btn:   #F99E23  buttons
+   --text:       #cbd5e1  body text
+   --muted:      #94a3b8  secondary text
+   --line:       #fbbf2440 borders
+*/
 
 body {
-  font-family: 'Kantumruy Pro', sans-serif;
-  background-color: #1c1917;
-  color: #f8fafc;
+  font-family: 'Kantumruy Pro', 'Noto Sans', sans-serif;
+  background-color: #080c14;
+  color: #cbd5e1;
   line-height: 1.8;
 }
 
@@ -10,46 +19,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
-#mainNav {
-  background-color: #292524;
-  border-bottom: 1px solid #44403c;
-  padding: 12px 0;
-}
-
-.navbar-brand {
-  font-family: 'Moul', serif;
-  font-size: 18px;
-  color: #ffffff !important;
-}
-
-.navbar-brand span,
-.navbar-brand i {
-  color: #f59e0b;
-}
-
-.nav-link {
-  color: #a8a29e !important;
-  font-weight: 500;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #f59e0b !important;
-}
-
 /* Buttons */
 .btn-gold {
-  background-color: #f59e0b;
-  color: #1c1917;
+  background-color: #F99E23;
+  color: #080c14;
   font-weight: 700;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 4px 15px #f5a6234d;
 }
 
 .btn-gold:hover {
-  background-color: #f59e0b;
-  color: #1c1917;
+  background-color: #F99E23;
+  color: #000000;
   opacity: 0.9;
 }
 
@@ -70,15 +52,15 @@ html {
 /* Hero */
 .hero {
   padding: 150px 0 90px;
-  background-color: #292524;
-  border-bottom: 1px solid #44403c;
+  background-color: #123233;
+  border-bottom: 1px solid #fbbf2440;
 }
 
 .badge-pill {
   display: inline-block;
-  background-color: #1c1917;
-  border: 1px solid #44403c;
-  color: #f59e0b;
+  background-color: #080c14;
+  border: 1px solid #fbbf2440;
+  color: #fbbf24;
   padding: 4px 16px;
   border-radius: 50px;
   font-size: 14px;
@@ -90,15 +72,16 @@ html {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
+  color: #ffffff;
 }
 
 .hero-title span {
-  color: #f59e0b;
+  color: #fbbf24;
 }
 
 .hero-sub {
   max-width: 650px;
-  color: #d6d3d1;
+  color: #cbd5e1;
   margin-top: 16px;
 }
 
@@ -108,7 +91,7 @@ html {
 }
 
 .bg-soft {
-  background-color: #292524;
+  background-color: #123233;
 }
 
 .eyebrow {
@@ -122,7 +105,7 @@ html {
 .section-title {
   font-size: 28px;
   text-align: center;
-  color: #f59e0b;
+  color: #fbbf24;
 }
 
 .section-title.text-start {
@@ -138,7 +121,7 @@ html {
 }
 
 #story p {
-  color: #d6d3d1;
+  color: #cbd5e1;
   margin-bottom: 12px;
 }
 
@@ -147,7 +130,7 @@ html {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #44403c;
+  border: 1px solid #fbbf2440;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -158,8 +141,8 @@ html {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(135deg, #f59e0b, #b45309);
-  color: #ffffff;
+  background: linear-gradient(135deg, #fbbf24, #b45309);
+  color: #080c14;
 }
 
 .photo-inner i {
@@ -175,8 +158,8 @@ html {
   position: absolute;
   left: 16px;
   bottom: 16px;
-  background-color: #1c1917;
-  color: #f59e0b;
+  background-color: #123233;
+  color: #fbbf24;
   font-weight: 700;
   padding: 6px 16px;
   border-radius: 50px;
@@ -192,11 +175,11 @@ html {
 .stat-num {
   font-size: 34px;
   font-weight: 700;
-  color: #1c1917;
+  color: #080c14;
 }
 
 .stat-label {
-  color: #064e3b;
+  color: #123233;
   font-weight: 600;
   font-size: 14px;
 }
@@ -204,33 +187,33 @@ html {
 /* Cards */
 .info-card,
 .why-card {
-  background-color: #292524;
-  border: 1px solid #44403c;
+  background-color: #123233;
+  border: 1px solid #fbbf2440;
   border-radius: 16px;
   padding: 28px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .bg-soft .info-card {
-  background-color: #1c1917;
+  background-color: #080c14;
 }
 
 .info-card h5,
 .why-card h5 {
-  color: #f59e0b;
+  color: #fbbf24;
 }
 
 .info-card p,
 .why-card p {
-  color: #d6d3d1;
+  color: #cbd5e1;
 }
 
 .icon-box {
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background-color: #1c1917;
-  border: 1px solid #44403c;
+  background-color: #080c14;
+  border: 1px solid #fbbf2440;
   color: #10b981;
   display: flex;
   align-items: center;
@@ -252,8 +235,8 @@ html {
 
 /* Dishes */
 .dish {
-  background-color: #1c1917;
-  border: 1px solid #44403c;
+  background-color: #080c14;
+  border: 1px solid #fbbf2440;
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
@@ -274,14 +257,14 @@ html {
 .d4 { background-color: #a16207; }
 
 .dish h6 {
-  color: #f59e0b;
+  color: #fbbf24;
   margin: 14px 14px 4px;
 }
 
 .dish p {
   margin: 0 14px 16px;
   font-size: 14px;
-  color: #a8a29e;
+  color: #94a3b8;
   line-height: 1.6;
 }
 
@@ -290,14 +273,18 @@ html {
   text-align: center;
 }
 
+.member h6 {
+  color: #ffffff;
+}
+
 .avatar {
   width: 100px;
   height: 100px;
   margin: 0 auto 12px;
   border-radius: 50%;
-  background-color: #292524;
+  background-color: #123233;
   border: 3px solid #10b981;
-  color: #f59e0b;
+  color: #fbbf24;
   font-family: 'Moul', serif;
   font-size: 36px;
   display: flex;
@@ -306,46 +293,25 @@ html {
 }
 
 .member small {
-  color: #a8a29e;
+  color: #94a3b8;
 }
 
 /* CTA */
 .cta {
-  background-color: #292524;
-  border: 1px solid #44403c;
+  background-color: #123233;
+  border: 1px solid #fbbf2440;
   border-radius: 20px;
   padding: 50px 20px;
 }
 
 .cta h3 {
-  color: #f59e0b;
+  color: #fbbf24;
   font-size: 26px;
 }
 
 .cta p {
-  color: #d6d3d1;
+  color: #cbd5e1;
   margin-bottom: 16px;
-}
-
-/* Footer */
-footer {
-  background-color: #292524;
-  border-top: 1px solid #44403c;
-  padding: 50px 0 20px;
-}
-
-footer h6 {
-  color: #f59e0b;
-  margin-bottom: 12px;
-}
-
-footer i {
-  color: #10b981;
-}
-
-footer hr {
-  border-color: #44403c;
-  margin: 24px 0 16px;
 }
 
 /* Mobile */
