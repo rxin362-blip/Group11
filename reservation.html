@@ -6,77 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reservation</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <section class="py-5 reservation">
+    <section class="py-5 reservation bg-secondary">
         <div class="container">
             <div class="text">
                 <h2 class="header mb-3">Reservation</h2>
                 <p class="title">សូមធ្វើការបំពេញបែបបទ</p>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <img src="#" alt="">
-                </div>
-                <div class="col-8">
-                    <form action="#">
-                        <!-- Full Name -->
-                        <div class="mb-3">
-                            <label for="regName" class="form-label small fw-bold text-light mb-1">
-                                ឈ្មោះពេញ (Full Name)
-                            </label>
-                            <div class="input-group-custom">
-                                <i class="bi bi-person"></i>
-                                <input type="text" id="regName" name="fullname" placeholder="វ៉ា​ ដារ៉ូ" required>
-                            </div>
+                <div class="col-5">
+                    <div class="card-info bg-black px-5 rounded-5">
+                        <div class="text py-3">
+                            <h3 class="header-info ">Contact Info</h3>
+                            <div class="title-info me-5">We`re happy to help you plan the perfect dining experiences.</div>
                         </div>
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label for="regEmail" class="form-label small fw-bold text-light mb-1">
-                                អ៊ីមែល(Email Address)
-                            </label>
-                            <div class="input-group-custom">
-                                <i class="bi bi-envelope"></i>
-                                <input type="email" id="regEmail" name="email" placeholder="vadaro@example.com"
-                                    required>
-                            </div>
-                        </div>
-                        <!-- Phone-Number -->
-                        <div class="mb-3">
-                            <label for="regPhone-number" class="form-label small fw-bold text-light mb-1">
-                                លេខទូរសព្ទ(Phone-Number)
-                            </label>
-                            <div class="input-group-custom">
-                                <input type="password" id="regPhone-number" name="លេខទូរសព្ទ" placeholder="097 8888 666"
-                                    required>
-                            </div>
-                        </div>
-                        <!--  Date&Time -->
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <label for="regDate" class="form-label small fw-bold text-light mb-1">
-                                    ពេលវេលា(Date)
-                                </label>
-                                <div class="input-group-custom">
-                                    <input type="password" id="regDate" name="ពេលវេលា" placeholder="01/05/2026"
-                                        required>
+                        <div class="body align-items-center">
+                            <div class="first d-flex align-items-center p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                    class="bi bi-clock me-5 ms-5 bg-danger p-2 rounded-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                </svg>
+                                <div class="info">
+                                    <div class="sub-title">OPENING HOURS</div>
+                                    <div class="sub-title-info fs-1 ">Mon-Sun, 7:00 AM - 12:00 AM</div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <label for="regTime" class="form-label small fw-bold text-light mb-1">
-                                    ម៉ោង(Time)
-                                </label>
-                                <div class="input-group-custom">
-                                    <input type="number" id="regTime" name="ម៉ោង" placeholder="4:00pm" required>
+                            <div class="seconde d-flex align-items-center p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                    class="bi bi-telephone-inbound me-5 ms-5 bg-danger p-2 rounded-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                <div class="info">
+                                    <div class="sub-title">CALL FOR BOOKING</div>
+                                    <div class="sub-title-info fs-1">+97 888 9999</div>
+                                </div>
+                            </div>
+                            <div class="third d-flex align-items-center p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                    class="bi bi-people-fill me-5 ms-5 bg-danger p-2 rounded-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                                </svg>
+                                <div class="info">
+                                    <div class="sub-title">GROUP DINING</div>
+                                    <div class="sub-title-info fs-1 ">Specail menus for 10+ quests</div>
+                                </div>
+                            </div>
+                            <div class="fouth d-flex align-items-center p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                    class="bi bi-geo-alt me-5 ms-5 bg-danger p-2 rounded-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                                <div class="info">
+                                    <div class="sub-title">LOCATION</div>
+                                    <div class="sub-title-info fs-1">82 TK Streen, PP</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </form>
+                </div>
+                <div class="col-7">
+                    <div class="card">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="password" class="form-control" placeholder="Heng Panha">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input class="form-control" placeholder="+855 12 345 678">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Number of Guests</label>
+                                    <input type="number" class="form-control" placeholder="1person or 2people....">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Time</label>
+                                    <input type="time" class="form-control" placeholder="6:00 pm">
+                                </div>
+                                <div class="form-field">
+                                    <label for="fieldSelect" class="form-label">Type of table</label>
+                                    <select class="form-control" id="fieldSelect">
+                                        <option selected>Window View</option>
+                                        <option value="1">Outdoor Patio</option>
+                                        <option value="2">Private Booth</option>
+                                        <option value="3">Chef`s Table </option>
+                                        <option value="4">Communal Table </option>
+                                        <option value="5">Family Table </option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Specail Requests</label>
+                                    <textarea class="form-control" placeholder="Enter your requests"></textarea>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-confirm" type="button">Confirm Reservation</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+
+
+
+
+
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+            crossorigin="anonymous"></script>
     </section>
 </body>
 

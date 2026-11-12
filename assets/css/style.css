@@ -1,21 +1,20 @@
-
 body {
   background-color: hsl(0, 4%, 81%);
   font-family: 'Kantumruy Pro', sans-serif;
   color: #e0e0e0;
 }
 
-section {
-  margin-top: 100px;
+.login {
+  margin-top: 60px;
   width: 100%;
 }
 
-.container {
-  max-width: 450px;
+.login .container {
+  max-width: 500px;
   margin: auto;
 }
 
-.tab-btn {
+.login .tab-btn {
   color: #8e8e8e;
   font-weight: 600;
   padding-bottom: 0.75rem;
@@ -23,28 +22,30 @@ section {
   transition: all 0.2s ease;
 }
 
-.tab-btn:hover {
+.login .tab-btn:hover {
   color: #10b981;
 }
 
 /* Form Headers */
-.header {
+.login .header {
   color: #eab308;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.title {
-  color: #9ca3af;
+.login .title {
+  color: #1d1e1f;
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
 
-.card {
+.login .card {
+  background-color: #fff;
+  padding: 20px;
   border: 1px solid beige;
 }
 
-.input-group-custom {
+.login .input-group-custom {
   background-color: #1a1a1a;
   border: 1px solid #333333;
   border-radius: 0.75rem;
@@ -54,17 +55,17 @@ section {
   transition: border-color 0.2s ease;
 }
 
-.input-group-custom:focus-within {
+.login .input-group-custom:focus-within {
   border-color: #10b981;
 }
 
-.input-group-custom i {
+.login .input-group-custom i {
   color: #6b7280;
   font-size: 1.1rem;
   margin-right: 0.75rem;
 }
 
-.input-group-custom input {
+.login .input-group-custom input {
   background: transparent;
   border: none;
   color: #ffffff;
@@ -73,7 +74,7 @@ section {
   font-size: 0.95rem;
 }
 
-.btn-emerald {
+.login .btn-emerald {
   background-color: #059669;
   color: #ffffff;
   font-weight: 700;
@@ -84,7 +85,7 @@ section {
   margin-top: 10px;
 }
 
-.btn-emerald:hover {
+.login .btn-emerald:hover {
   background-color: #10b981;
   color: #ffffff;
 }
@@ -97,8 +98,9 @@ section {
 
 .reservation {
   width: 100%;
- 
+  
 }
+
 .reservation .container {
   width: 1200px;
   margin: auto;
@@ -110,6 +112,52 @@ section {
   justify-content: center;
 }
 
-.reservation .header{
-  font-size: 34px;
+.reservation .header {
+  color: #eab308;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.reservation .title {
+  color: #232528;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.reservation .card{
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid beige;
+}
+.reservation .form-label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px
+}
+
+.reservation .form-control,
+.reservation .form-select {
+  border-color: #dfe9e3;
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-size: 14px
+}
+
+.reservation .btn-confirm {
+  background: #10b981;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 17px;
+  
+  
+}
+
+.reservation .btn-confirm:hover {
+  background: #0b9e6d;
+  color: #fff
+}
+.card-info{
+  padding: 50px 0;
+  
+}
+.header-info{
+  color: #eab308;
 }
