@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="py-5 reservation">
+        <div class="container">
+            <div class="text">
+                <h2 class="header mb-3">Reservation</h2>
+                <p class="title">សូមធ្វើការបំពេញបែបបទ</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="#" alt="">
+                </div>
+                <div class="col-8">
+                    <form action="#">
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="regName" class="form-label small fw-bold text-light mb-1">
+                                ឈ្មោះពេញ (Full Name)
+                            </label>
+                            <div class="input-group-custom">
+                                <i class="bi bi-person"></i>
+                                <input type="text" id="regName" name="fullname" placeholder="វ៉ា​ ដារ៉ូ" required>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label small fw-bold text-light mb-1">
+                                អ៊ីមែល(Email Address)
+                            </label>
+                            <div class="input-group-custom">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" id="regEmail" name="email" placeholder="vadaro@example.com"
+                                    required>
+                            </div>
+                        </div>
+                        <!-- Phone-Number -->
+                        <div class="mb-3">
+                            <label for="regPhone-number" class="form-label small fw-bold text-light mb-1">
+                                លេខទូរសព្ទ(Phone-Number)
+                            </label>
+                            <div class="input-group-custom">
+                                <input type="password" id="regPhone-number" name="លេខទូរសព្ទ" placeholder="097 8888 666"
+                                    required>
+                            </div>
+                        </div>
+                        <!--  Date&Time -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="regDate" class="form-label small fw-bold text-light mb-1">
+                                    ពេលវេលា(Date)
+                                </label>
+                                <div class="input-group-custom">
+                                    <input type="password" id="regDate" name="ពេលវេលា" placeholder="01/05/2026"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="regTime" class="form-label small fw-bold text-light mb-1">
+                                    ម៉ោង(Time)
+                                </label>
+                                <div class="input-group-custom">
+                                    <input type="number" id="regTime" name="ម៉ោង" placeholder="4:00pm" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
