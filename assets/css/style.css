@@ -52,7 +52,6 @@ body {
 }
 
 .login .input-group-custom {
-  background-color: #1a1a1a;
   border: 1px solid #333333;
   border-radius: 0.75rem;
   display: flex;
