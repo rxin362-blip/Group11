@@ -131,3 +131,30 @@ body {
     width: 100%;
     height: 600px;
 }
+
+.drawer-end {
+    background-color: #123233;
+}
+
+.btn-icon {
+    background-color: goldenrod;
+}
+
+.btn-close {
+    background-color: goldenrod;
+}
+
+/* menu */
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #f59e0b;
+    text-align: center;
+    padding: 20px 0px;
+}
+.ruler{
+    size: 5;
+    color: #f59e0b;
+    text-align: center;
+    width: 75%;
+}

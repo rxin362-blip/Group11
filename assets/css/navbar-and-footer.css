@@ -48,8 +48,8 @@ body {
 .dropdown-custom {
     position: absolute;
     list-style-type: none;
-    top: 100%;
-    left: 50%;
+    top: 60%;
+    left: 90%;
     transform: translateX(-50%);
     background-color: #123233;
     border: 1px solid #fbbf2440;
