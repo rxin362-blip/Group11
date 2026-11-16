@@ -36,6 +36,13 @@ a {
     color: #0f7a56;
 }
 
+.form-control:focus,
+.form-select:focus {
+    border: 2px solid #10b981;
+    box-shadow: none;
+    outline: none;
+}
+
 i {
     font-size: 15px;
 }
@@ -120,7 +127,7 @@ h1 {
 }
 
 .btn-green:hover {
-    background: #0a885e;
+    background: #059669;
     color: #fff
 }
 

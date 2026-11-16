@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="assets/css/feedback-style.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    
+    <div class="container py-5">
+    <div class="feedback-card mx-auto">
+        <div class="text-center mb-4">
+            <!-- <h2 class="brand">MenuMate</h2> -->
+            <h3>We Value Your Feedback</h3>
+            <p class="text">Help us improve your dining experience.</p>
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-control"
+                    placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+                <label for="category" class="form-label">Feedback Category</label>
+                <select id="category" class="form-select">
+                    <option selected disabled>Select category</option>
+                    <option>Website Experience</option>
+                    <option>Restaurant Service</option>
+                    <option>Food Ordering</option>
+                    <option>Payment</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label">Topic</label>
+                <input type="text" id="subject" class="form-control"
+                    placeholder="What is your feedback about?">
+            </div>
+
+            <div class="mb-4">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea id="feedback" class="form-control" rows="5"
+                    placeholder="Write your suggestions or complaints..."></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn w-100">
+                Submit Feedback
+            </button>
+        </form>
+    </div>
+</div>
+
+    <script type="module" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
