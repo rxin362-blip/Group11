@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
 
 <body>
 
-    <nav class="navbar  lg:navbar-expand navbar-custom">
+    <nav class="navbar  lg:navbar-expand navbar-custom position-sticky">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <div class="d-flex flex-column">
@@ -48,22 +49,19 @@
                 <div class="drawer-body mb-2 md:mb-0">
                     <ul class="nav navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom active" aria-current="page"
-                                href="home-page.html">ទំព័រដើម</a>
+                            <a class="nav-link nav-link-custom " aria-current="page" href="home-page.html">ទំព័រដើម</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link nav-link-custom dropdown-toggle" href="menu.html" id="menuDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link nav-link-custom active dropdown-toggle" href="menu.html"
+                                id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 បញ្ជីមុខម្ហូប
                             </a>
                             <ul class="dropdown-menu dropdown-custom shadow-lg text-center text-md-start"
                                 aria-labelledby="menuDropdown">
                                 <li><a class="dropdown-item" href="soup.html">ប្រភេទសម្លរ</a></li>
-                                <li><a class="dropdown-item" href="fried.html">ប្រភេទឆា</a></li>
                                 <li><a class="dropdown-item" href="grilled.html">ប្រភេទចៀននិងបំពង</a></li>
                                 <li><a class="dropdown-item" href="burn.html">ប្រភេទអាំងនិងដុត</a></li>
-                                <li><a class="dropdown-item" href="steam.html">ប្រភេទចំហុយ</a></li>
                                 <li><a class="dropdown-item" href="dessert.html">ប្រភេទបង្អែម</a></li>
                                 <li><a class="dropdown-item" href="drink.html">ភេសជ្ជៈ</a></li>
                             </ul>
@@ -90,7 +88,7 @@
 
                         <button class="btn btn-cart position-relative" type="button">
                             <i class="bi bi-bag-fill me-1"></i>
-                            <a href="cart.html">កញ្ចប់</a>
+                            <a href="cart.html" class="text-decoration-none">កញ្ចប់</a>
                             <span class="cart-badge badge rounded-pill bg-danger ms-1">0</span>
                         </button>
 
@@ -103,11 +101,245 @@
         </div>
     </nav>
 
-    <section>
-        <div class="title">បញ្ជីមុខម្ហូប</div>
-        <hr class="ruler">
-    </section>
-    
+   
+    <section class="our-menu py-5">
+    <div class="container">
+        <div class="title text-center">បញ្ជីមុខម្ហូប</div>
+        <hr class="mx-auto">
+        <div class="row g-3 md:g-4">
+            <!-- soup -->
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/សម្លរកកូរ.jpg" class="card-img" alt="សម្លកកូរ">
+                        <h5 class="mt-2 mb-0 card-title">សម្លកកូរ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/សម្លរទំពាំងត្រីឆ្អើរ.jpg" class="card-img" alt="សម្លរទំពាំងត្រីឆ្អើរ">
+                        <h5 class="mt-2 mb-0 card-title">សម្លរទំពាំងត្រីឆ្អើរ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/សម្លរប្រហើរ.jpg" class="card-img" alt="សម្លរប្រហើរ">
+                        <h5 class="mt-2 mb-0 card-title">សម្លរប្រហើរ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/សម្លរម្ជូរខ្ទិះគ្រឿងសមុទ្រ.jpg" class="card-img" alt="សម្លរម្ជូរខ្ទិះគ្រឿងសមុទ្រ">
+                        <h5 class="mt-2 mb-0 card-title">សម្លរម្ជូរខ្ទិះគ្រឿងសមុទ្រ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/សម្លរម្ជូរគ្រឿងសាច់គោ.jpg" class="card-img" alt="សម្លរម្ជូរគ្រឿងសាច់គោ">
+                        <h5 class="mt-2 mb-0 card-title">សម្លរម្ជូរគ្រឿងសាច់គោ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/soup/ស្ងោរជ្រក់មាន់.jpg" class="card-img" alt="ស្ងោរជ្រក់មាន់">
+                        <h5 class="mt-2 mb-0 card-title">ស្ងោរជ្រក់មាន់</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grilled -->
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/grilled/ត្រីដុត.jpg" class="card-img" alt="ត្រីដុត">
+                        <h5 class="mt-2 mb-0 card-title">ត្រីដុត</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/grilled/មាន់អាំង.jpg" class="card-img" alt="មាន់អាំង">
+                        <h5 class="mt-2 mb-0 card-title">មាន់អាំង</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/grilled/សាច់ជ្រូកអាំង.jpg" class="card-img" alt="សាច់ជ្រូកអាំង">
+                        <h5 class="mt-2 mb-0 card-title">សាច់ជ្រូកអាំង</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/grilled/មាន់អាំងទឹកឃ្មុំ.jpg" class="card-img" alt="មាន់អាំងទឹកឃ្មុំ">
+                        <h5 class="mt-2 mb-0 card-title">មាន់អាំងទឹកឃ្មុំ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fried -->
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/fried/ឆាខ្ញី.jpg" class="card-img" alt="ឆាខ្ញី">
+                        <h5 class="mt-2 mb-0 card-title">ឆាខ្ញី</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/fried/បង្គារបំពង.jpg" class="card-img" alt="បង្គារបំពង">
+                        <h5 class="mt-2 mb-0 card-title">បង្គារបំពង</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/fried/សាច់ក្រកចៀន.jpg" class="card-img" alt="សាច់ក្រកចៀន">
+                        <h5 class="mt-2 mb-0 card-title">សាច់ក្រកចៀន</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/fried/សាយ៉រ.jpg" class="card-img" alt="សាយ៉រ">
+                        <h5 class="mt-2 mb-0 card-title">សាយ៉រ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dessert -->
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/dessert/1.jpg" class="card-img" alt="ការ៉េម">
+                        <h5 class="mt-2 mb-0 card-title">ការ៉េម</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/dessert/2.jpg" class="card-img" alt="ការ៉េម">
+                        <h5 class="mt-2 mb-0 card-title">ការ៉េម</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/dessert/3.jpg" class="card-img" alt="ការ៉េម">
+                        <h5 class="mt-2 mb-0 card-title">ការ៉េម</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/dessert/នំកូរ.jpg" class="card-img" alt="នំកូរ">
+                        <h5 class="mt-2 mb-0 card-title">នំកូរ</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/dessert/បបរសណ្តែកសៀង.jpg" class="card-img" alt="បបរសណ្តែក">
+                        <h5 class="mt-2 mb-0 card-title">បបរសណ្តែក</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:២០០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- drink -->
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/drink/coca cola.jpg" class="card-img" alt="កូកា កូឡា">
+                        <h5 class="mt-2 mb-0 card-title">កូកា​ កូឡា</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:៨០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/drink/orange juice.jpg" class="card-img" alt="ក្រូចច្របាច់">
+                        <h5 class="mt-2 mb-0 card-title">ក្រូចច្របាច់</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:៨០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+                <div class="card card-custom h-100">
+                    <div class="card-body d-flex flex-column">
+                        <img src="assets/images/drink/water.jpg" class="card-img" alt="ទឹក">
+                        <h5 class="mt-2 mb-0 card-title">ទឹក</h5>
+                        <small class="fg-3 mb-2">តម្លៃ:៤០០០រៀល</small>
+                        <a href="cart" class="btn mt-auto">កន្ត្រកទំនិញ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <footer class="py-5" data-bs-theme="light">
         <hr>
         <div class="container">
